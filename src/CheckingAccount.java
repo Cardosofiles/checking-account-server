@@ -10,7 +10,7 @@ public class CheckingAccount {
     LocalDate date;
     private Double balance = 0.0;
     boolean active = true;
-    private List<String> transactionHistory = new ArrayList<>();
+    private final List<String> transactionHistory = new ArrayList<>();
 
     // Verificar saldo
     Double checkBalance() {
@@ -122,3 +122,4 @@ public class CheckingAccount {
         }
     }
 }
+
